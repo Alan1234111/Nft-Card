@@ -1,0 +1,153 @@
+:root {
+    --Primary-Soft-blue: hsl(215, 51%, 70%);
+    --Primary-Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-mbg: hsl(217, 54%, 11%);
+    --Very-dark-blue-cbg: hsl(216, 50%, 16%);
+    --Very-dark-blue-l: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+
+}
+
+.attribution {
+     font-size: 11px; 
+     text-align: center;
+     position: fixed;
+     top: 95%;
+     left: 50%;
+     transform: translate(-50%,-50%);
+     color: var(--White);
+    }
+
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    background-color: var(--Very-dark-blue-mbg);
+    font-family: 'Outfit', sans-serif;
+    
+}
+
+div.nft {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    width: 40vh;
+    height: 70vh;
+    background-color: var(--Very-dark-blue-cbg);
+    color: var(--White);
+    border-radius: 15px;
+    box-shadow: 3px 3px var(--Very-dark-blue-mbg);
+    
+}
+
+.nft section.author, section.data {
+    margin-left: 5%;
+    margin-right: 5%; 
+
+}
+
+section.image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div img {
+    width: 90%;
+    height: 90%;
+    box-shadow: 3px 3px 3px 3px var(--Very-dark-blue-mbg);
+    border-radius: 15px;
+}
+
+img.look {
+  position: absolute;
+  
+  width: 18%;
+  height: 10%;
+  opacity: 0;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+img.look:hover {
+    opacity: 1;
+
+}
+
+section.data {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+    
+    
+}
+
+p.name {
+transition: 0.2s;
+cursor: pointer;
+}
+
+p.name:hover {
+    color: var(--Primary-Cyan)
+}
+
+p.description {
+    color: var(--Primary-Soft-blue);
+    font-weight: 600; 
+    
+}
+
+p.icon  {
+    display: flex;
+    justify-content: space-between;
+    color: var(--Primary-Cyan);
+}
+
+span.clock {
+    color: var(--Primary-Soft-blue);
+}
+
+img.icon.eth {
+    width: 10px;
+    height:15px;
+    
+}
+
+img.icon.clock {
+    width: 15px;
+    height:15px;
+}
+
+
+div.line {
+    width: 100%;
+    height:3%;
+    background-color: var(--Very-dark-blue-l) ;
+    margin-bottom: 13%;
+}
+
+div.author {
+    display: flex;
+    align-items: center;
+    color: var(--Primary-Soft-blue);
+
+}
+
+img.author {
+    width: 40px;
+    height: 40px;
+    margin-right: 5%;
+}
+
+span#name {
+margin-left: 1%;
+transition: 0.2s;
+cursor: pointer;
+}
+
+span#name:hover {
+    color: var(--Primary-Cyan);
+}
